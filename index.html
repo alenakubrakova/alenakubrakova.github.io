@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Alena Kubrakova — Senior Product Designer (UX/UI)</title>
+<meta name="description" content="Product Designer specializing in complex B2B SaaS, FinTech platforms, and scalable Design Systems. Based in Israel.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alena Kubrakova — Senior Product Designer (UX/UI)">
+<meta property="og:description" content="Product Designer specializing in complex B2B SaaS, FinTech platforms, and scalable Design Systems.">
+<meta property="og:image" content="assets/og-preview.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Roboto',sans-serif;background:#fff;color:#111;font-size:13px;letter-spacing:0}
+h1,h2,h3,h4,h5,h6{letter-spacing:0}
+.material-symbols-outlined{font-size:16px;line-height:1;vertical-align:middle;font-family:'Material Symbols Outlined'}
+.nav-item{display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:7px;cursor:pointer;transition:background .15s;color:#4A5568;font-size:14.5px;font-weight:400;letter-spacing:0;user-select:none}
+.nav-item:hover{background:#F5F6F8}
+.nav-item.active{background:#F1F5F9;color:#374151;font-weight:500}
+.nav-item.active .material-symbols-outlined{color:#374151}
+.nav-item .material-symbols-outlined{color:#64748B;font-size:17px}
+.proj-card{border:1px solid #D1D5DB;border-radius:12px;overflow:hidden;background:#fff;cursor:pointer;transition:border-color .25s ease,transform .25s ease,box-shadow .25s ease;display:flex;flex-direction:column}
+.proj-card:hover{border-color:#9CA3AF;box-shadow:0 4px 20px rgba(0,0,0,.08);transform:translateY(-2px)}
+.card-thumb{position:relative;overflow:hidden;border-top:1px solid #D1D5DB;flex:1;min-height:240px}
+.card-img-inner{width:100%;height:100%;min-height:240px;display:flex;align-items:center;justify-content:center}
+.card-overlay{position:absolute;inset:0;background:rgba(0,0,0,.35);opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease}
+.card-view{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#FFFFFF;border:none;border-radius:8px;color:#111827;font-size:12.5px;font-weight:500;padding:6px 14px;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease,transform .25s ease,box-shadow .25s ease;font-family:'Roboto',sans-serif;letter-spacing:0}
+.proj-card:hover .card-overlay{opacity:1;visibility:visible}
+.proj-card:hover .card-view{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1.03);box-shadow:0 8px 24px rgba(0,0,0,.16)}
+.cat-tag{display:inline-block;background:#EFF6FF;color:#3B82F6;font-size:10px;font-weight:500;padding:2px 7px;border-radius:4px;letter-spacing:.03em;text-transform:uppercase}
+.case-study{display:none}.case-study.active{display:block}
+.tab-content{display:none}.tab-content.active{display:block}
+.explore-projects{margin-top:48px;padding-top:32px;border-top:1px solid #E5E7EB;background:#FFFFFF}
+.explore-title{font-size:20px;font-weight:700;color:#111827;margin-top:0!important;margin-bottom:24px!important;letter-spacing:0}
+.explore-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;justify-content:start;margin-top:0!important;margin-bottom:0!important}
+.explore-card{border:1px solid #D1D5DB;border-radius:16px;background:#fff;overflow:hidden;cursor:pointer;transition:border-color .25s ease,transform .25s ease,box-shadow .25s ease;display:flex;flex-direction:column;margin-bottom:0!important}
+.explore-card:hover{border-color:#9CA3AF;box-shadow:0 4px 20px rgba(0,0,0,.08);transform:translateY(-2px)}
+.explore-thumb{position:relative;overflow:hidden;border-radius:0;background:#F4F7FF;width:100%;aspect-ratio:1024/680}
+.explore-thumb img{display:block;width:100%;height:100%;object-fit:cover;border-radius:0!important}
+.explore-overlay{position:absolute;inset:0;background:rgba(0,0,0,.35);border-radius:0;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease}
+.explore-view{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#FFFFFF;border:none;border-radius:8px;color:#111827;font-size:12.5px;font-weight:500;padding:6px 14px;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease,transform .25s ease,box-shadow .25s ease;font-family:'Roboto',sans-serif;letter-spacing:0}
+.explore-card:hover .explore-overlay{opacity:1;visibility:visible}
+.explore-card:hover .explore-view{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1.03);box-shadow:0 8px 24px rgba(0,0,0,.16)}
+.explore-meta{padding:16px}
+.explore-name{font-size:16px;font-weight:600;color:#111827;line-height:1.35;margin-top:10px;letter-spacing:0}
+@media (max-width:1024px){.explore-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:768px){.explore-grid{grid-template-columns:1fr}}
+.img-ph{border:1px solid #D1D5DB;border-radius:8px;background:#F9FAFB;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:#64748B;font-size:12px;width:100%;height:auto!important;min-height:240px;padding:40px 0}
+.img-ph:has(img){background:transparent;border:none;min-height:0;padding:0}
+.img-ph img{display:block;width:100%;height:auto;border:1px solid #D1D4D9;border-radius:12px;background:#fff}
+.img-ph .material-symbols-outlined{font-size:28px;color:#D1D5DB}
+.case-image-wrap{position:relative;display:block;width:100%;max-width:none;height:auto!important;margin:24px 0;line-height:0;cursor:pointer;overflow:visible}
+.case-image-wrap img{display:block;width:100%;max-width:none;height:auto!important;border:1px solid #D1D4D9;border-radius:12px;background:#fff;vertical-align:top}
+.meta-box{border:1px solid #D1D5DB;border-radius:8px;overflow:hidden;margin-bottom:26px}
+.meta-row{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #D1D5DB}
+.meta-row:last-child{border-bottom:none}
+.meta-row.full{grid-template-columns:1fr}
+.meta-cell{padding:9px 14px}
+.meta-cell:first-child:not(:only-child){border-right:1px solid #D1D5DB;background:#FAFAFA}
+.meta-label{font-size:10px;font-weight:500;color:#64748B;text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px}
+.meta-val{font-size:12.5px;color:#111;font-weight:500;letter-spacing:0}
+.tl-dot{width:7px;height:7px;border-radius:50%;background:#D1D5DB;flex-shrink:0;margin-top:5px}
+.tl-dot.now{background:#111}
+.tl-line{width:1px;background:#D1D5DB;flex:1;margin:3px 0 0}
+.btn-cv{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border:1px solid #111111;border-radius:8px;background:#111111;color:#FFFFFF;font-size:12.5px;font-weight:500;cursor:pointer;transition:background .15s,border-color .15s;text-decoration:none;font-family:'Roboto',sans-serif;letter-spacing:0}
+.btn-cv:hover{background:#27272A;border-color:#27272A}
+.btn-ghost{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border:none;background:transparent;color:#374151;font-size:12.5px;font-weight:500;cursor:pointer;border-radius:7px;transition:background .15s;font-family:'Roboto',sans-serif;letter-spacing:0}
+.btn-ghost:hover{background:#F1F5F9}
+.btn-dl{display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border:1px solid #111;border-radius:8px;background:#111;color:#fff;font-size:12.5px;font-weight:500;cursor:pointer;transition:opacity .15s;text-decoration:none;font-family:'Roboto',sans-serif;letter-spacing:0}
+.btn-dl:hover{opacity:.8}
+.social-ico{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:1px solid #D1D5DB;border-radius:7px;transition:background .15s;text-decoration:none;color:#374151}
+.social-ico:hover{background:#F5F6F8}
+.sidebar-cta{display:flex;align-items:center;gap:10px;padding:11px 12px;border:1px solid #D1D5DB;border-radius:10px;text-decoration:none;transition:border-color .2s ease,color .2s ease,background-color .2s ease;background:#F4F5F7}
+.sidebar-cta:hover{background:#EAECEF;border-color:#111827}
+.sidebar-cta .lets-talk-accent{transition:color .2s ease}
+.sidebar-cta:hover .lets-talk-accent{color:#111827!important}
+.contact-card{transition:border-color .2s ease,box-shadow .2s ease,background .15s}
+.contact-card .arrow-icon{transition:color .2s ease,opacity .2s ease}
+.contact-card:hover{border-color:#111827!important}
+.contact-card:hover .arrow-icon{color:#111827!important;opacity:1}
+.divider,
+hr,
+.section-divider{border:none;border-top:1px solid rgba(0,0,0,.06);margin:32px 0!important}
+.case-image-wrap:has(+ .divider),
+.img-ph:has(+ .divider),
+.image-container:has(+ .divider),
+.card:has(+ .divider){margin-bottom:0!important}
+.sec-num{font-size:12px;font-weight:600;color:#6B7280;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+.cs-h2{font-size:16px;font-weight:600;color:#111;margin-top:32px;margin-bottom:16px;letter-spacing:0}
+.cs-h3{font-size:16px;font-weight:600;color:#374151;margin-top:32px;margin-bottom:16px;letter-spacing:0}
+.cs-body{font-size:14px;color:#374151;line-height:1.55;letter-spacing:0}
+.check-item{display:flex;align-items:flex-start;gap:7px;margin-bottom:5px}
+.check-item .material-symbols-outlined{font-size:15px;color:#3B82F6;margin-top:2px;flex-shrink:0}
+.goals-box{background:#F5F7F9;border:1px solid #EAECEF;border-radius:12px;padding:24px;margin:18px 0 24px}
+.impact-item{display:flex;align-items:flex-start;gap:7px;margin-bottom:5px}
+.impact-item .material-symbols-outlined{font-size:15px;color:#22C55E;margin-top:2px;flex-shrink:0}
+.impact-accent{background:#F0F4FA;border:1px solid rgba(0,102,255,.15);border-radius:12px;padding:24px;margin:8px 0 26px}
+.bullet-item{display:flex;gap:8px;margin-bottom:5px}
+.bullet-dot{width:4px;height:4px;border-radius:50%;background:#D1D5DB;flex-shrink:0;margin-top:8px}
+.numbered-card{border:1px solid #D1D5DB;border-radius:8px;padding:13px 15px;margin-bottom:9px}
+.numbered-card > div:first-child{font-size:15px!important;font-weight:600!important}
+.num-badge{background:#EFF6FF;color:#3B82F6;font-size:10px;font-weight:600;padding:1px 7px;border-radius:3px;margin-right:8px;letter-spacing:0}
+.sec-heading{font-size:10px;font-weight:600;color:#64748B;text-transform:uppercase;letter-spacing:.09em;margin-bottom:12px}
+.cs-section{margin-bottom:48px}
+.case-study h2,
+.case-study .h2-section-title{margin-top:40px;margin-bottom:20px}
+.case-study h3,
+.case-study h4{margin-top:32px;margin-bottom:16px}
+.case-study .cs-section > .sec-num{margin-top:0;margin-bottom:20px}
+.case-study .cs-section:first-of-type > .sec-num{margin-top:0}
+.case-study p + p{margin-top:20px}
+.case-study p:has(+ .case-image-wrap),
+.case-study p:has(+ .img-ph){margin-bottom:24px!important}
+.case-study ul,
+.case-study ol{margin-bottom:24px}
+.case-study p,
+.case-study li,
+.case-study .cs-body{font-size:14px!important;color:#374151!important;line-height:1.55!important}
+.case-study li{font-size:14px;color:#374151;line-height:1.55}
+.goals-box > .cs-h2:first-child,
+.impact-accent > .cs-h2:first-child{margin-top:0}
+.cip-card{border:1px solid #D1D5DB;border-radius:10px;overflow:hidden;margin-bottom:16px}
+.cip-header{background:#F8FAFC;border-bottom:1px solid #D1D5DB;padding:11px 16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cip-row{padding:14px 16px;border-top:1px solid #E2E8F0}
+.cip-row:first-child{border-top:none}
+.cip-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.cip-label{font-size:11px;font-weight:700;color:#374151;text-transform:uppercase;letter-spacing:.07em}
+.method-subhead{font-size:15px;color:#374151;line-height:1.55;letter-spacing:0;font-weight:600;margin-bottom:4px!important}
+.method-list{list-style:none;margin:0 0 16px!important;padding:0;color:#374151;font-size:14px;line-height:1.55;letter-spacing:0}
+.method-list li{display:flex;align-items:flex-start;margin-bottom:4px}
+.method-list li:last-child{margin-bottom:0}
+.method-bullet{margin-right:8px;flex-shrink:0}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:#D1D5DB;border-radius:4px}
+.cityfix-feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;margin-top:24px}
+.ux-matrix{background:#F2F4F7;border:1px solid #E5E7EB;border-radius:16px;padding:32px}
+.ux-matrix-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ux-matrix-card{background:#FFFFFF;border:1px solid rgba(0,0,0,.05);border-radius:12px;padding:20px}
+.ux-matrix-title{font-size:15px;font-weight:600;color:#111827;margin-bottom:6px;line-height:1.35}
+.ux-matrix-desc{font-size:13px;color:#6B7280;line-height:1.5}
+@media (max-width:900px){.ux-matrix-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:768px){.cityfix-feature-grid,.ux-matrix-grid{grid-template-columns:1fr}.ux-matrix{padding:24px}}
+@media (max-width:768px){
+  html,body{width:100%;overflow-x:hidden!important}
+  header{height:auto!important;min-height:64px;padding:12px 16px!important;align-items:flex-start!important;gap:12px}
+  header>div{min-width:0}
+  header .btn-cv{flex-shrink:0}
+  body>div[style*="display:flex"][style*="flex:1"]{flex-direction:column!important;overflow:hidden!important}
+  aside{width:100%!important;min-width:0!important;border-right:none!important;border-bottom:1px solid #D1D5DB;padding:8px 16px!important;overflow:visible!important}
+  aside nav{display:grid!important;grid-template-columns:repeat(3,1fr);gap:6px!important;padding-top:0!important}
+  .nav-item{justify-content:center;padding:9px 8px;font-size:13px}
+  aside>div[style*="flex:1"]{display:none!important}
+  .sidebar-cta,
+  .floating-badge,
+  .lets-talk-badge{display:none!important}
+  main{width:100%;overflow-x:hidden!important}
+  #projects-grid,
+  #tab-bio,
+  #tab-contact,
+  .case-study{padding:24px 16px 40px!important;max-width:none!important;width:100%!important}
+  #projects-grid>div[style*="display:grid"]{grid-template-columns:1fr!important;gap:16px!important}
+  #case-study-view>div[style*="position:sticky"]>div{padding:14px 16px!important;max-width:none!important}
+  .meta-row{grid-template-columns:1fr!important}
+  .meta-cell:first-child:not(:only-child){border-right:none;border-bottom:1px solid #D1D5DB}
+  .case-study div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+  .case-image-wrap,
+  .img-ph,
+  .ux-matrix,
+  .impact-accent{max-width:100%!important}
+  .explore-grid{grid-template-columns:1fr!important}
+  .contact-card{width:100%}
+}
+img + hr,
+.image-container + hr,
+.image-card + hr,
+div:has(> img) + hr{margin-top:32px!important}
+</style>
+</head>
+<body style="height:100vh;display:flex;flex-direction:column;overflow:hidden">
+
+<!-- HEADER -->
+<header style="display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:52px;border-bottom:1px solid #D1D5DB;background:#fff;flex-shrink:0;z-index:20">
+  <div style="display:flex;flex-direction:column;gap:2px">
+    <div style="display:flex;align-items:center;gap:0;line-height:1">
+      <span style="font-size:15px;font-weight:700;color:#111;letter-spacing:0">Alena Kubrakova</span>
+      <span style="font-size:13px;font-weight:400;color:#374151;margin-left:8px;letter-spacing:0">&middot; Product Designer</span>
+    </div>
+    <span style="font-size:11.5px;font-weight:400;color:#64748B;letter-spacing:0">Design Systems • B2B • SaaS • Fintech</span>
+  </div>
+  <a href="Alena_Kubrakova_Product_Designer_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-cv">
+    <span class="material-symbols-outlined" style="font-size:15px">download</span>CV
+  </a>
+</header>
+
+<!-- BODY -->
+<div style="display:flex;flex:1;overflow:hidden">
+
+  <!-- SIDEBAR -->
+  <aside style="width:210px;min-width:210px;border-right:1px solid #D1D5DB;background:#fff;display:flex;flex-direction:column;padding:0 10px 12px;flex-shrink:0;overflow-y:auto">
+    <nav style="display:flex;flex-direction:column;gap:2px;padding-top:24px">
+      <div class="nav-item active" id="nav-projects" onclick="switchTab('projects')">
+        <span class="material-symbols-outlined">space_dashboard</span>Projects
+      </div>
+      <div class="nav-item" id="nav-bio" onclick="switchTab('bio')">
+        <span class="material-symbols-outlined">person</span>Bio
+      </div>
+      <div class="nav-item" id="nav-contact" onclick="switchTab('contact')">
+        <span class="material-symbols-outlined">mail</span>Contact
+      </div>
+    </nav>
+    <div style="flex:1"></div>
+    <a href="https://www.linkedin.com/in/alenakubrakova/" target="_blank" class="sidebar-cta">
+      <span style="font-size:18px;line-height:1;flex-shrink:0">👋</span>
+      <div>
+        <div style="font-size:12px;font-weight:500;color:#374151;line-height:1.3;letter-spacing:0">Hi, I'm Alena.</div>
+        <div class="lets-talk-accent" style="font-size:11px;color:#64748B;margin-top:1px">Let's talk! ↗</div>
+      </div>
+    </a>
+  </aside>
+
+  <!-- MAIN -->
+  <main style="flex:1;overflow-y:auto;background:#fff">
+
+    <!-- ===== PROJECTS TAB ===== -->
+    <div id="tab-projects" class="tab-content active">
+
+      <div id="projects-grid" style="padding:32px 48px 40px;max-width:1280px;margin:0 auto;width:100%">
+        <div style="margin-bottom:24px">
+          <div style="font-size:17px;font-weight:700;color:#111;letter-spacing:0">Projects</div>
+          <div style="font-size:12px;color:#64748B;margin-top:3px">Selected product &amp; UX work, sorted by most recent.</div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px">
+
+          <!-- Card 1: PandaSign -->
+          <div class="proj-card" onclick="openCase(0)">
+            <div style="padding:16px 16px 12px">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;width:100%">
+                <span class="cat-tag">Product Design</span>
+                <span style="font-size:12px;font-weight:500;color:#5A6578;line-height:1;margin:0;padding:0;display:inline-flex;align-items:center;letter-spacing:0">2025</span>
+              </div>
+              <div style="font-size:18px;font-weight:600;color:#111;margin-bottom:6px;line-height:1.4;letter-spacing:0">PandaSign Feature</div>
+              <div style="font-size:12px;color:#5A6578;line-height:1.6;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">Native eSignature feature for CRM &amp; end-user platforms — WebTrader and Mobile App.</div>
+            </div>
+            <div class="card-thumb" style="background:#F4F7FF">
+              <img src="images/pandasign-thumb.png" alt="PandaSign Feature Cover" class="w-full h-full object-cover">
+              <div class="card-overlay"></div>
+              <div class="card-view">View <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+            </div>
+          </div>
+
+          <!-- Card 2: WebTrader -->
+          <div class="proj-card" onclick="openCase(1)">
+            <div style="padding:16px 16px 12px">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;width:100%">
+                <span class="cat-tag">Product (UX) Design</span>
+                <span style="font-size:12px;font-weight:500;color:#5A6578;line-height:1;margin:0;padding:0;display:inline-flex;align-items:center;letter-spacing:0">2024</span>
+              </div>
+              <div style="font-size:18px;font-weight:600;color:#111;margin-bottom:6px;line-height:1.4;letter-spacing:0">B2B SaaS WebTrader Platform 2.0</div>
+              <div style="font-size:12px;color:#5A6578;line-height:1.6;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">Redesign of a comprehensive 7-month platform overhaul and scalable multi-brand design system upgrade.</div>
+            </div>
+            <div class="card-thumb" style="background:#F0F4FF">
+              <img src="images/webtrader-thumb.png" alt="WebTrader Platform 2.0 Cover" class="w-full h-full object-cover">
+              <div class="card-overlay"></div>
+              <div class="card-view">View <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+            </div>
+          </div>
+
+          <!-- Card 3: City Fix -->
+          <div class="proj-card" onclick="openCase(2)">
+            <div style="padding:16px 16px 12px">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;width:100%">
+                <span class="cat-tag">Mobile UX/UI Design</span>
+                <span style="font-size:12px;font-weight:500;color:#5A6578;line-height:1;margin:0;padding:0;display:inline-flex;align-items:center;letter-spacing:0">2022</span>
+              </div>
+              <div style="font-size:18px;font-weight:600;color:#111;margin-bottom:6px;line-height:1.4;letter-spacing:0">City Fix App</div>
+              <div style="font-size:12px;color:#5A6578;line-height:1.6;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">Mobile application for urban improvement, built strictly on Material Design system guidelines.</div>
+            </div>
+            <div class="card-thumb" style="background:#F0FBF5">
+              <img src="images/cityfix-thumb.png" alt="City Fix App Cover" class="w-full h-full object-cover">
+              <div class="card-overlay"></div>
+              <div class="card-view">View <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CASE STUDIES -->
+      <div id="case-study-view" style="display:none">
+        <div style="position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #E2E8F0;min-height:60px">
+          <div style="max-width:1280px;margin:0 auto;width:100%;padding:22px 48px 16px;display:flex;align-items:center">
+            <button class="btn-ghost" onclick="closeCase()">
+              <span class="material-symbols-outlined" style="font-size:15px">arrow_back</span>Back to Projects
+            </button>
+          </div>
+        </div>
+
+        <!-- ── CASE 0: PANDASIGN ── -->
+        <div class="case-study" id="case-0" style="padding:32px 48px 64px;max-width:1280px;margin:0 auto;width:100%">
+          <span class="cat-tag" style="display:inline-block;margin-bottom:10px">Product Design · 2025</span>
+          <div style="font-size:24px;font-weight:700;color:#111;margin-bottom:6px;letter-spacing:0">PandaSign Feature</div>
+          <p class="cs-body" style="max-width:640px;margin-bottom:22px">Native eSignature feature integrated into Panda CRM, WebTrader &amp; Mobile app. Fully integrated, customizable alternative to third-party tools like DocuSign.</p>
+
+          <div class="meta-box">
+            <div class="meta-row"><div class="meta-cell"><div class="meta-label">Company</div><div class="meta-val">Panda Trading Systems</div></div><div class="meta-cell"><div class="meta-label">Timeline</div><div class="meta-val">2 Months</div></div></div>
+            <div class="meta-row"><div class="meta-cell"><div class="meta-label">My Role</div><div class="meta-val">Product Designer</div></div><div class="meta-cell"><div class="meta-label">Project Type</div><div class="meta-val">New Internal Feature Development</div></div></div>
+            <div class="meta-row"><div class="meta-cell"><div class="meta-label">Teams</div><div class="meta-val">Product, PM, Developers, QA</div></div><div class="meta-cell"><div class="meta-label">Platforms</div><div class="meta-val">CRM System (Admin), WebTrader, Mobile App</div></div></div>
+            <div class="meta-row full"><div class="meta-cell"><div class="meta-label">Tools</div><div class="meta-val">Figma, Jira, Panda Design System, Material Symbols</div></div></div>
+          </div>
+
+          <div class="cs-section">
+            <div class="sec-num">Section 01 — Problem Statement &amp; Goals</div>
+            <div class="cs-h2">Challenge</div>
+            <p class="cs-body" style="margin-bottom:14px">1) Clients relied heavily on third-party tools like DocuSign — expensive, disconnected from internal CRM workflows, and lacking visual customization.<br/><br/>2) Building PandaSign natively targets lower operational costs, full UX ownership, and seamless CRM integration.</p>
+            <div class="goals-box">
+              <div class="cs-h2">Main Goals</div>
+              <div>
+                <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Save company revenue by completely eliminating third-party licenses.</span></div>
+                <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Enable end-user signing (interactive fillable fields + digital signature simulation).</span></div>
+                <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Achieve seamless B2B CRM workflow integration.</span></div>
+                <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Maintain unified design consistency across Web and Mobile.</span></div>
+                <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Support multilingual configurations and LTR/RTL rendering out of the box.</span></div>
+              </div>
+            </div>
+            <hr class="divider" style="margin-bottom:18px">
+            <div class="cs-h2">My Responsibilities</div>
+            <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:18px">
+              <div class="bullet-item"><div class="bullet-dot" style="margin-top:7px"></div><span class="cs-body">Delivered end-to-end UI/UX architecture for new features, data configurations, and client onboarding flows across CRM, WebTrader, and Mobile App.</span></div>
+              <div class="bullet-item"><div class="bullet-dot" style="margin-top:7px"></div><span class="cs-body">Designed core web/mobile interface layouts, wireframes, and UI components while maintaining strict cross-platform parity within each platform's independent design system.</span></div>
+              <div class="bullet-item"><div class="bullet-dot" style="margin-top:7px"></div><span class="cs-body">Collaborated daily with Product Managers and Engineering teams, managing the full design-to-QA handoff lifecycle and rapid prototype iteration cycles.</span></div>
+            </div>
+            <div class="cs-h2">My Role</div>
+            <p class="cs-body" style="margin-bottom:16px">As the sole Product Designer on this initiative, my core mission was to seamlessly architect and integrate a brand-new, complex native eSignature utility into pre-existing ecosystem platforms. I had to strictly preserve core business logic while respecting and leveraging the independent, distinct design systems of each target platform, delivering highly intuitive prototypes optimized for rapid engineering implementation.</p>
+            <div class="case-image-wrap group">
+              <img src="images/pandasign-flow-cropped.png" alt="PandaSign End-to-End User Flow Architecture Diagram" onclick="openLightbox(this.src, 'PandaSign End-to-End User Flow Architecture Diagram — A comprehensive overview of the document request and signing lifecycle within the integrated CRM environment.')">
+              <div class="absolute top-3 right-3 bg-white/90 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none flex items-center justify-center border border-gray-100" style="width: 32px; height: 32px;">
+                <span class="material-symbols-outlined" style="font-size: 18px; color: #374151;">zoom_in</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider" style="margin-bottom:26px">
+
+          <div class="cs-section">
+            <div class="sec-num">Section 03 — CRM Configuration Flow (B2B Admin Interface)</div>
+            <p class="cs-body" style="margin-bottom:8px">A new "PandaSign" entry was implemented into the eSignature configuration dropdown within CRM core settings.</p>
+            <p class="cs-body" style="margin-bottom:16px">When enabled, an "Active" toggle appears, and "Use Sign Online" becomes available across automated workflows or manual requests.</p>
+            <div class="case-image-wrap group" style="margin-bottom:26px">
+              <img src="images/pandasign-crm-configuration.png" alt="Global CRM System Blueprint and Automated Signature Workspace" onclick="openLightbox(this.src, 'Global CRM System Blueprint and Automated Signature Workspace')">
+              <div class="absolute top-3 right-3 bg-white/90 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none flex items-center justify-center border border-gray-100" style="width: 32px; height: 32px;">
+                <span class="material-symbols-outlined" style="font-size: 18px; color: #374151;">zoom_in</span>
+              </div>
+            </div>
+
+            <hr class="divider" style="margin-bottom:26px">
+
+            <div class="cs-h2">CRM Document Creation Methods</div>
+            <p class="cs-body" style="margin-bottom:16px">To provide maximum flexibility for B2B workflows, the system allows users to initiate and create automated documents via two distinct paths:</p>
+
+            <div style="width:100%;display:block;background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:24px;margin-bottom:24px">
+              <div style="font-size:15px;font-weight:600;color:#111;margin-bottom:10px;letter-spacing:0"><span class="num-badge">01</span>Workflow Task (Automated)</div>
+              <p style="font-size:12.5px;color:#6B7280!important;line-height:1.85;margin-bottom:16px;letter-spacing:0">Integrated into the standard task engine. When "Use eSignature" is checked, the task transforms into an automated document generation workflow with the following system logic:</p>
+              <ul class="method-list">
+                <li><span class="method-bullet">•</span><span><strong style="color:#374151;font-weight:600">CRM Dynamic Fields:</strong> Automatically pulls internal system variables (like <code style="background:#F3F4F6;padding:1px 5px;border-radius:3px;font-size:11.5px">&#123;&#123;first_name&#125;&#125;</code> or <code style="background:#F3F4F6;padding:1px 5px;border-radius:3px;font-size:11.5px">&#123;&#123;account_no&#125;&#125;</code>) directly from the database into the template.</span></li>
+                <li><span class="method-bullet">•</span><span><strong style="color:#374151;font-weight:600">End-User Fields:</strong> Supports configurable fields (Text, Number, Date, Signature) that the final recipient must complete manually.</span></li>
+                <li><span class="method-bullet">•</span><span><strong style="color:#374151;font-weight:600">System Actions:</strong> Includes an "Add" button to instantly inject field tokens into the document schema and a "Preview Document" action for real-time verification.</span></li>
+              </ul>
+              <div class="case-image-wrap group" style="margin:18px 0 0">
+                <img src="images/pandasign-workflow-task-setup.png" alt="Global CRM System Automated Workflow Trigger Setup and Signature Task Rules Interface" onclick="openLightbox(this.src, 'Global CRM System — Automated Workflow Trigger Setup and Signature Task Rules Interface')">
+                <div class="absolute top-3 right-3 bg-white/90 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none flex items-center justify-center border border-gray-100" style="width: 32px; height: 32px;">
+                  <span class="material-symbols-outlined" style="font-size: 18px; color: #374151;">zoom_in</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="width:100%;display:block;background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:24px;margin-bottom:0">
+              <div style="font-size:15px;font-weight:600;color:#111;margin-bottom:10px;letter-spacing:0"><span class="num-badge">02</span>Manual Document Request (Client Detail View)</div>
+              <p style="font-size:12.5px;color:#6B7280!important;line-height:1.85;margin-bottom:16px;letter-spacing:0">A lightweight manual trigger initiated directly from the client's profile. While it utilizes the same core backend editor engine, it focuses purely on on-demand generation and excludes automated CRM workflows.</p>
+              <ul class="method-list">
+                <li><span class="method-bullet">•</span><span><strong style="color:#374151;font-weight:600">Client Profile Trigger:</strong> Accessed instantly via a dedicated action button inside the specific Client Detail View.</span></li>
+                <li><span class="method-bullet">•</span><span><strong style="color:#374151;font-weight:600">End-User Field Mapping:</strong> Focuses entirely on fields completed manually by the recipient (Text, Number, Date, Signature), completely removing the "Add Field" option for dynamic CRM tokens.</span></li>
+                <li><span class="method-bullet">•</span><span><strong style="color:#374151;font-weight:600">Dedicated Canvas &amp; Footer:</strong> Features an isolated document workspace with a specialized section at the bottom for custom, one-off document notes and legal disclaimers.</span></li>
+              </ul>
+              <div class="case-image-wrap group" style="margin:18px 0 0">
+                <img src="images/pandasign-manual-document-request.png" alt="CRM Client Detail View On-Demand Manual eSignature Request Button and Modal Canvas" onclick="openLightbox(this.src, 'CRM Client Detail View — On-Demand Manual eSignature Request Button and Modal Canvas')">
+                <div class="absolute top-3 right-3 bg-white/90 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none flex items-center justify-center border border-gray-100" style="width: 32px; height: 32px;">
+                  <span class="material-symbols-outlined" style="font-size: 18px; color: #374151;">zoom_in</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider" style="margin-bottom:26px">
+
+          <div class="cs-section">
+            <div class="sec-num">Section 04 — End-User Platforms (WebTrader · Client Area)</div>
+            <p class="cs-body" style="margin-bottom:18px">End-users securely sign requested documents via the Verification Center on WebTrader or Mobile App.</p>
+            <div class="numbered-card" style="margin-bottom:10px">
+              <div style="font-size:12.5px;font-weight:600;color:#111;margin-bottom:8px;letter-spacing:0"><span class="num-badge">01</span>Verification Center List View</div>
+              <p class="cs-body">Displays document type as the main title with secondary subtitles (e.g., "Sign the requested document online"). Features a prominent "Sign Online" CTA.</p>
+            </div>
+            <div class="numbered-card" style="margin-bottom:10px">
+              <div style="font-size:12.5px;font-weight:600;color:#111;margin-bottom:8px;letter-spacing:0"><span class="num-badge">02</span>Document for Sign (Inner Screen)</div>
+              <p class="cs-body">Contextual tooltips guide users to their first interactive input field. A persistent input bar remains focused at the bottom of the screen to streamline data entry.</p>
+            </div>
+            <div class="numbered-card" style="margin-bottom:18px">
+              <div style="font-size:12.5px;font-weight:600;color:#111;margin-bottom:8px;letter-spacing:0"><span class="num-badge">03</span>Signature Input System</div>
+              <p class="cs-body">Users draw their signature in a scaled canvas or choose auto-filled name simulation in an uneditable "Caveat" handwriting font. Features Next/Previous step actions, an "Edit Document" review, and "Complete Signing" which pushes status to "Pending".</p>
+            </div>
+            <div class="case-image-wrap group" style="margin-top:24px">
+              <img src="images/pandasign-webtrader-signing-flow.png" alt="PandaSign WebTrader Signing Flow" onclick="openLightbox(this.src, 'PandaSign WebTrader Signing Flow')">
+              <div class="absolute top-3 right-3 bg-white/90 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none flex items-center justify-center border border-gray-100" style="width: 32px; height: 32px;">
+                <span class="material-symbols-outlined" style="font-size: 18px; color: #374151;">zoom_in</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider" style="margin-bottom:26px">
+
+          <div class="cs-section">
+            <div class="sec-num">Mobile Application Integration</div>
+            <div class="cs-h2">Mobile App Adaptation</div>
+            <p class="cs-body" style="margin-bottom:16px">Adapted the full end-to-end signing wizard into a touch-first mobile interface. Focused heavily on minimizing cognitive load on smaller viewports, optimizing input fields for mobile keyboards, ensuring strict biometric compliance overlays, and designing a natural thumb-zone signature canvas for effortless execution on the go.</p>
+            <div class="case-image-wrap group">
+              <img src="images/pandasign-mobile-signing-flow.png" alt="PandaSign Mobile App Signing Flow" onclick="openLightbox(this.src, 'PandaSign Mobile App Signing Flow')">
+              <div class="absolute top-3 right-3 bg-white/90 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none flex items-center justify-center border border-gray-100" style="width: 32px; height: 32px;">
+                <span class="material-symbols-outlined" style="font-size: 18px; color: #374151;">zoom_in</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider" style="margin-bottom:26px">
+
+          <div class="cs-section">
+            <div class="sec-num">Section 05 — Outcomes, Impact &amp; Lessons</div>
+            <div class="impact-accent">
+              <div class="cs-h2" style="margin-bottom:10px">Impact</div>
+              <div>
+                <div class="impact-item"><span class="material-symbols-outlined">trending_up</span><span class="cs-body">100% replacement of third-party signature tools, eliminating licensing costs.</span></div>
+                <div class="impact-item"><span class="material-symbols-outlined">trending_up</span><span class="cs-body">Increased customer conversion via secure, fully branded native UI workflows.</span></div>
+                <div class="impact-item"><span class="material-symbols-outlined">trending_up</span><span class="cs-body">Highly positive feedback from CRM operators on template creation efficiency.</span></div>
+                <div class="impact-item"><span class="material-symbols-outlined">trending_up</span><span class="cs-body">Achieved absolute feature parity across responsive Web and Mobile breakpoints.</span></div>
+              </div>
+            </div>
+            <div class="cs-h2">Final Thoughts</div>
+            <p class="cs-body">PandaSign consolidated separate B2B admin configurations and B2C user flows into a unified product feature. It proved the business value of replacing third-party dependencies with proprietary assets, and highlighted the critical role of scalable design systems across cross-functional R&amp;D teams.<br/><br/>This project provided a phenomenal opportunity to dive deep into backend CRM logic, understanding exactly how data flows and synchronizes between our primary core products. It also served as a real-world stress test for our pre-established design systems; seeing how pre-built tokens and components drastically accelerated the design phase and streamlined developer handoff truly emphasized the immense value of scalable design infrastructure.</p>
+          </div>
+
+          <div class="explore-projects">
+            <h2 class="explore-title">Explore Other Projects</h2>
+            <div class="explore-grid">
+              <div class="explore-card" onclick="openCase(1)">
+                <div class="explore-meta">
+                  <span class="cat-tag">Product (UX) Design</span>
+                  <div class="explore-name">B2B SaaS WebTrader Platform 2.0</div>
+                </div>
+                <div class="explore-thumb" style="background:#F0F4FF">
+                  <img src="images/webtrader-thumb.png" alt="WebTrader Platform 2.0 Cover">
+                  <div class="explore-overlay"></div>
+                  <div class="explore-view">View <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                </div>
+              </div>
+              <div class="explore-card" onclick="openCase(2)">
+                <div class="explore-meta">
+                  <span class="cat-tag">Mobile UX/UI Design</span>
+                  <div class="explore-name">City Fix App</div>
+                </div>
+                <div class="explore-thumb" style="background:#F0FBF5">
+                  <img src="images/cityfix-thumb.png" alt="City Fix App Cover">
+                  <div class="explore-overlay"></div>
+                  <div class="explore-view">View <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /case-0 -->
+
+        <!-- ── CASE 1: WEBTRADER 2.0 ── -->
+        <div class="case-study" id="case-1" style="padding:32px 48px 64px;max-width:1280px;margin:0 auto;width:100%">
+          <span class="cat-tag" style="display:inline-block;margin-bottom:10px">Product (UX) Design · 2024</span>
+          <div style="font-size:24px;font-weight:700;color:#111;margin-bottom:6px;letter-spacing:0">B2B SaaS WebTrader Platform 2.0 Redesign</div>
+          <p class="cs-body" style="max-width:640px;margin-bottom:22px">A comprehensive 7-month platform overhaul of Panda Trading System's flagship WebTrader product, paired with a scalable multi-brand design system engineered for white-label deployment at speed.</p>
+          <div class="meta-box">
+            <div class="meta-row"><div class="meta-cell"><div class="meta-label">Company</div><div class="meta-val">Panda Trading System</div></div><div class="meta-cell"><div class="meta-label">Timeline</div><div class="meta-val">7 Months</div></div></div>
+            <div class="meta-row"><div class="meta-cell"><div class="meta-label">My Role</div><div class="meta-val">Product Designer (UXUI)</div></div><div class="meta-cell"><div class="meta-label">Teams</div><div class="meta-val">Product &amp; R&amp;D</div></div></div>
+            <div class="meta-row"><div class="meta-cell"><div class="meta-label">Platforms</div><div class="meta-val">Desktop Web &amp; Mobile UI</div></div><div class="meta-cell"><div class="meta-label">Tools</div><div class="meta-val">Figma, Zeplin, Jira, Material Symbols, Global Style to Code</div></div></div>
+          </div>
+
+          <div class="cs-section">
+            <div class="sec-num">Section 01 — The Challenge</div>
+            <div class="cs-h2">The Problem</div>
+            <p class="cs-body" style="margin-bottom:16px">The old trading platform was difficult for users because it lacked visual hierarchy and clear navigation. Complex trading data was messy and hard to read. Additionally, the system was not scalable — customizing the interface for different partner broker brands required manual, slow code updates.</p>
+            <div class="case-image-wrap group">
+              <img src="images/webtarder-problems.png" alt="Legacy WebTrader Platform Architecture Issues" onclick="openLightbox(this.src, 'Legacy WebTrader Platform Architecture Issues')">
+              <div class="absolute top-3 right-3 bg-white/90 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none flex items-center justify-center border border-gray-100" style="width: 32px; height: 32px;">
+                <span class="material-symbols-outlined" style="font-size: 18px; color: #374151;">zoom_in</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider" style="margin-bottom:26px">
+
+          <div class="cs-section">
+            <div class="sec-num">Section 02 — Strategic Goals</div>
+            <div class="goals-box">
+              <div class="cs-h2">Goals</div>
+              <div>
+                <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Optimize layouts for trading clarity and high-density data readability.</span></div>
+                <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Develop tokenized multi-brand scaling for white-label broker deployments.</span></div>
+                <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Design highly responsive layouts for Desktop Wide (1920×1440) and Laptop (1366×1280).</span></div>
+                <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Re-architect the onboarding matrix into a guided, low-friction flow.</span></div>
+                <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Implement native RTL mirroring for Arabic and Hebrew market readiness.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider" style="margin-bottom:26px">
+
+          <div class="cs-section">
+            <div class="sec-num">Section 03 — My Role &amp; Design Process Overview</div>
+            <div class="cs-h2">My Role</div>
+            <p class="cs-body" style="margin-bottom:24px">My role in the project involved redesigning the onboarding questionnaire flow. I created an adaptive design system for the platform, which included color styles, font styles, and support for dark/light modes and RTL (right-to-left) language compatibility. I worked on the main platform screens, developed responsive views for all devices, and provided developers with optimized files for rapid implementation on Zeplin, along with CSS files for styling.</p>
+            <div class="cs-h2">Design Process</div>
+            <p class="cs-body" style="margin-bottom:24px">I collaborated closely with product managers and developers to understand platform constraints, user behavior, and feature priorities. I started by analyzing existing workflows, mapping user journeys, and identifying pain points. I created wireframes and low-fidelity prototypes to validate interaction models, then moved on to high-fidelity UI design in Figma using a modular system for brand themes and reusability.</p>
+            <div class="cs-h3">Findings</div>
+            <p class="cs-body" style="margin-bottom:24px">The platform lacked a consistent color and font system, leading to confusion, missed elements, and extended adaptation times.</p>
+            <div class="cs-h3">Solution</div>
+            <p class="cs-body" style="margin-bottom:24px">Created a style palette adaptable to both light and dark themes, preparing the CSS file with the Figma plugin "Global Style to Code" for seamless developer implementation. The light and dark themes share the same style names, allowing for quick switching and smooth integration.</p>
+            <div class="cs-h3">Benefits</div>
+            <p class="cs-body" style="margin-bottom:18px">This streamlined both design and development, significantly reducing adaptation time while maintaining platform functionality.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="img-ph"><img src="images/webtrader-theme-tokens.png" alt="Light and Dark Theme Semantic Token Specs"></div>
+              <div class="img-ph"><img src="images/webtrader-whitelabel.png" alt="White-Label Brand Customization Swatches"></div>
+            </div>
+          </div>
+
+          <hr class="divider" style="margin-bottom:26px">
+
+          <div class="cs-section">
+            <div class="sec-num">Section 04 — Design System &amp; Scalability</div>
+            <p class="cs-body" style="margin-bottom:18px">Developed and maintained a design system tailored to WebTrader's needs, including components, UI tokens, themes, and layout rules. The system supports multiple brands with different color palettes and font rules, while ensuring consistency and maintainability. I worked closely with developers to deliver Figma specs and assets via Zeplin, ensuring smooth handoff and pixel-perfect results.</p>
+            <div class="cip-card">
+              <div class="cip-header">
+                <span class="material-symbols-outlined" style="font-size:15px;color:#3B82F6">lightbulb</span>
+                <span style="font-size:11px;font-weight:600;color:#3B82F6;text-transform:uppercase;letter-spacing:.06em">Case Study in Point</span>
+                <span style="font-size:12px;font-weight:600;color:#374151;letter-spacing:0">— Resolving Team Component Chaos</span>
+                <span style="font-size:11px;color:#64748B">(Real-World Challenge)</span>
+              </div>
+              <div class="cip-row">
+                <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px"><div class="cip-dot" style="background:#64748B"></div><span class="cip-label">Context</span></div>
+                <p class="cs-body">Because this was a highly customized product, every single interface element required a huge number of layout variants based on component sizing and specific contextual use-cases across multiple dense pages. All core components had to be strictly engineered in two separate responsive target viewport sizes: Desktop Wide (1920×1440) and Standard Laptops (1366×1280).</p>
+              </div>
+              <div class="cip-row">
+                <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px"><div class="cip-dot" style="background:#F59E0B"></div><span class="cip-label">The Friction</span></div>
+                <p class="cs-body">Due to rapid feature delivery timelines, two designers worked in parallel on separate application modules without a strict initial sync protocol. This resulted in a massive, redundant overhead where duplicate and conflicting components were generated for the same layout patterns, completely confusing the engineering teams and stalling the handoff.</p>
+              </div>
+              <div class="cip-row">
+                <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px"><div class="cip-dot" style="background:#3B82F6"></div><span class="cip-label">My Action</span></div>
+                <p class="cs-body">I took the initiative to audit, consolidate, and clean up the entire cross-module library. I organized intensive cross-functional alignment workshops between the design team and R&amp;D leads to define optimal UI states. I then refactored the chaotic layouts into a unified, clean component library with strictly documented variants.</p>
+              </div>
+              <div class="cip-row">
+                <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px"><div class="cip-dot" style="background:#22C55E"></div><span class="cip-label">The Outcome</span></div>
+                <p class="cs-body">While starting production without a fully locked system framework initially cost extra refactoring cycles, it saved hundreds of hours during development. I established a logical component framework that bridged the gap between design and development, drastically reducing future engineering technical debt and gaining deep experience in large-scale system architecture.</p>
+              </div>
+            </div>
+            <div class="case-image-wrap group" style="margin-top:24px">
+              <img src="images/webtrader-component-system.png" alt="Scalable Component Library Grid and Responsive Specifications" onclick="openLightbox(this.src, 'Scalable Component Library Grid and Responsive Specifications')">
+              <div class="absolute top-3 right-3 bg-white/90 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none flex items-center justify-center border border-gray-100" style="width: 32px; height: 32px;">
+                <span class="material-symbols-outlined" style="font-size: 18px; color: #374151;">zoom_in</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider" style="margin-bottom:26px">
+
+          <div class="cs-section">
+            <div class="sec-num">Section 05 — User Challenges in Onboarding Questionnaire</div>
+            <p class="cs-body" style="margin-bottom:14px">The second step was understanding user issues with the onboarding questionnaire. Through user feedback, we identified usability problems, leading to key design improvements that enhanced the questionnaire flow and UI clarity.</p>
+            <div class="cs-h2">Problems</div>
+            <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px">
+              <div style="display:flex;align-items:flex-start;gap:8px"><span class="material-symbols-outlined" style="font-size:15px;color:#F59E0B;margin-top:2px;flex-shrink:0">warning</span><span class="cs-body">The legacy onboarding questionnaire appeared as an intrusive pop-up canvas over the core workspace.</span></div>
+              <div style="display:flex;align-items:flex-start;gap:8px"><span class="material-symbols-outlined" style="font-size:15px;color:#F59E0B;margin-top:2px;flex-shrink:0">warning</span><span class="cs-body">On the login screen, a confusing secondary CTA labeled "Join Us" redirected users back to the registration page, disrupting the access loop.</span></div>
+              <div style="display:flex;align-items:flex-start;gap:8px"><span class="material-symbols-outlined" style="font-size:15px;color:#F59E0B;margin-top:2px;flex-shrink:0">warning</span><span class="cs-body">While the main signup container held all necessary fields, its presentation layer was entirely outdated.</span></div>
+              <div style="display:flex;align-items:flex-start;gap:8px"><span class="material-symbols-outlined" style="font-size:15px;color:#F59E0B;margin-top:2px;flex-shrink:0">warning</span><span class="cs-body">Most critically, the onboarding flow relied on massive dropdown chains and heavy scrolling, creating a cumbersome, high-friction user journey.</span></div>
+            </div>
+            <div class="case-image-wrap group" style="margin-top:24px;margin-bottom:16px">
+              <img src="images/webtrader-onboarding-problems.png" alt="High-Friction Legacy Onboarding Questionnaire Screen" onclick="openLightbox(this.src, 'High-Friction Legacy Onboarding Questionnaire Screen')">
+              <div class="absolute top-3 right-3 bg-white/90 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none flex items-center justify-center border border-gray-100" style="width: 32px; height: 32px;">
+                <span class="material-symbols-outlined" style="font-size: 18px; color: #374151;">zoom_in</span>
+              </div>
+            </div>
+            <div class="cs-h2">Solution</div>
+            <p class="cs-body" style="margin-bottom:14px">To enhance user convenience, the onboarding process was restructured from a cluttered pop-up to an isolated, step-by-step flow following the "One Question per Page" pattern. A clear progress stepper and welcoming contextual pop-ups were added, allowing users to save their progress and return later, simplifying the user journey and accommodating brand-specific question sets.</p>
+            <div class="cs-h2">Benefits</div>
+            <p class="cs-body" style="margin-bottom:16px">This redesign not only allows for faster completion of the questionnaire but also provides the option to save progress, enabling users to return to the platform and continue seamlessly. Additionally, it enhances user engagement and satisfaction through a more intuitive interface.</p>
+            <div class="case-image-wrap group" style="margin-top:24px">
+              <img src="images/webtrader-onboarding-solution.png" alt="Restructured Step-by-Step Onboarding Flow Overview" onclick="openLightbox(this.src, 'Restructured Step-by-Step Onboarding Flow Overview')">
+              <div class="absolute top-3 right-3 bg-white/90 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none flex items-center justify-center border border-gray-100" style="width: 32px; height: 32px;">
+                <span class="material-symbols-outlined" style="font-size: 18px; color: #374151;">zoom_in</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider" style="margin-bottom:26px">
+
+          <div class="cs-section" style="margin-bottom:0">
+            <div class="sec-num">Section 06 — Platform Features Evolution</div>
+            <div class="cs-h2">Scaling the Ecosystem</div>
+            <p class="cs-body" style="margin-bottom:16px">Successfully scaled the ecosystem by designing and integrating next-generation interactive modules directly into the unified interface. This included architecting the Service Desk Chat module (seamlessly bridging WebTrader utilities, underlying CRM states, and touch-optimized mobile screens), embedding third-party analytics hubs like TipRanks for live market data feeds, and creating minimal, low-friction 2FA security validation flows.</p>
+            <div class="case-image-wrap group" style="margin:24px 0 0">
+              <img src="images/webtrader-platform-features.png" alt="Integrated Platform Features: Service Desk Chat and 2FA Security" onclick="openLightbox(this.src, 'Integrated Platform Features: Service Desk Chat and 2FA Security')">
+              <div class="absolute top-3 right-3 bg-white/90 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none flex items-center justify-center border border-gray-100" style="width: 32px; height: 32px;">
+                <span class="material-symbols-outlined" style="font-size: 18px; color: #374151;">zoom_in</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider" style="margin:24px 0!important">
+
+          <div class="cs-section">
+            <div class="sec-num">Section 07 — Outcomes &amp; Impact</div>
+            <div style="background:#f0f4fa;border-radius:16px;padding:24px 32px 32px;margin-top:24px">
+              <h3 style="font-size:18px;font-weight:700;margin-top:0;margin-bottom:20px;color:#000000;letter-spacing:0">Impact</h3>
+              <div class="impact-item"><span class="material-symbols-outlined">trending_up</span><span class="cs-body">Made the entire trading platform simple, modern, and easy to use across both large desktop monitors and mobile screens.</span></div>
+              <div class="impact-item"><span class="material-symbols-outlined">trending_up</span><span class="cs-body">Built a structured design system that allows engineering teams to build and launch customized broker versions much faster.</span></div>
+              <div class="impact-item"><span class="material-symbols-outlined">trending_up</span><span class="cs-body">Fixed the high-friction onboarding setup, allowing users to finish registration quickly without dropping out.</span></div>
+              <div class="impact-item"><span class="material-symbols-outlined">trending_up</span><span class="cs-body">Received excellent feedback from internal teams for improving clarity, visual order, and general software usability.</span></div>
+            </div>
+          </div>
+
+          <div class="explore-projects">
+            <h2 class="explore-title">Explore Other Projects</h2>
+            <div class="explore-grid">
+              <div class="explore-card" onclick="openCase(0)">
+                <div class="explore-meta">
+                  <span class="cat-tag">Product Design</span>
+                  <div class="explore-name">PandaSign Feature</div>
+                </div>
+                <div class="explore-thumb" style="background:#F4F7FF">
+                  <img src="images/pandasign-thumb.png" alt="PandaSign Feature Cover">
+                  <div class="explore-overlay"></div>
+                  <div class="explore-view">View <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                </div>
+              </div>
+              <div class="explore-card" onclick="openCase(2)">
+                <div class="explore-meta">
+                  <span class="cat-tag">Mobile UX/UI Design</span>
+                  <div class="explore-name">City Fix App</div>
+                </div>
+                <div class="explore-thumb" style="background:#F0FBF5">
+                  <img src="images/cityfix-thumb.png" alt="City Fix App Cover">
+                  <div class="explore-overlay"></div>
+                  <div class="explore-view">View <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /case-1 -->
+
+        <!-- ── CASE 2: CITY FIX ── -->
+        <div class="case-study" id="case-2" style="padding:32px 48px 64px;max-width:1280px;margin:0 auto;width:100%">
+          <span class="cat-tag" style="display:inline-block;margin-bottom:10px">Mobile UX/UI Design · 2022</span>
+          <div style="font-size:24px;font-weight:700;color:#111;margin-bottom:6px;letter-spacing:0">City Fix</div>
+          <p class="cs-body" style="max-width:640px;margin-bottom:22px">Mobile application for urban improvement and infrastructure optimization. Designed for multi-generational B2C users to streamline civic problem reporting.</p>
+          <div class="meta-box">
+            <div class="meta-row"><div class="meta-cell"><div class="meta-label">Company / Client</div><div class="meta-val">Private Client</div></div><div class="meta-cell"><div class="meta-label">Timeline</div><div class="meta-val">3 Weeks</div></div></div>
+            <div class="meta-row"><div class="meta-cell"><div class="meta-label">My Role</div><div class="meta-val">Mobile UX/UI Designer</div></div><div class="meta-cell"><div class="meta-label">Project Type</div><div class="meta-val">End-to-End Mobile App</div></div></div>
+            <div class="meta-row"><div class="meta-cell"><div class="meta-label">Platform</div><div class="meta-val">Android (Material Design)</div></div><div class="meta-cell"><div class="meta-label">Tools</div><div class="meta-val">Figma, Material Design, Android UI Kit, Mobile UX</div></div></div>
+          </div>
+          <div class="cs-section">
+            <div class="sec-num">Section 01 — Problem Statement &amp; Goals</div>
+            <div class="cs-h2">Challenge</div>
+            <p class="cs-body" style="margin-bottom:14px">Designing a civic service app on tight technical specifications that must remain highly intuitive for users of all age groups — from tech-savvy youth to elderly citizens. Filing a traditional city complaint was slow, bureaucratic, and lacked transparency in resolution status.</p>
+            <div class="cs-h2">Goals</div>
+            <div style="margin-bottom:16px">
+              <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Simplify and accelerate the issue-reporting pipeline via mobile devices.</span></div>
+              <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Increase transparency by allowing citizens to track real-time resolution status.</span></div>
+              <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Boost civic engagement and accelerate urban improvement cycles.</span></div>
+              <div class="check-item"><span class="material-symbols-outlined">check_circle</span><span class="cs-body">Leverage native Material Design components, typography, and spacing for familiar UX.</span></div>
+            </div>
+            <div class="case-image-wrap group" style="margin-top:24px">
+              <img src="images/cityfix-hero-mockup.png" alt="City Fix Mobile Application Core Interface Mockups" onclick="openLightbox(this.src, 'City Fix Mobile Application Core Interface Mockups')">
+              <div class="absolute top-3 right-3 bg-white/90 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none flex items-center justify-center border border-gray-100" style="width: 32px; height: 32px;">
+                <span class="material-symbols-outlined" style="font-size: 18px; color: #374151;">zoom_in</span>
+              </div>
+            </div>
+          </div>
+          <hr class="divider" style="margin-bottom:26px">
+          <div class="cs-section">
+            <div class="sec-num">Section 02 — Core Features &amp; Functionality</div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <div class="bullet-item"><div class="bullet-dot"></div><span class="cs-body">Secure registration and verification via phone number.</span></div>
+              <div class="bullet-item"><div class="bullet-dot"></div><span class="cs-body">Frictionless, 3-step reporting flow to submit a city infrastructure problem.</span></div>
+              <div class="bullet-item"><div class="bullet-dot"></div><span class="cs-body">Real-time proposal and ticket status tracking dashboard.</span></div>
+              <div class="bullet-item"><div class="bullet-dot"></div><span class="cs-body">Integrated online support chat for immediate assistance.</span></div>
+              <div class="bullet-item"><div class="bullet-dot"></div><span class="cs-body">Photo-evidence reporting showing "Before / After" resolution states.</span></div>
+              <div class="bullet-item"><div class="bullet-dot"></div><span class="cs-body">Personalized profile configuration and notification management.</span></div>
+            </div>
+            <div style="width:100%;background:#F2F4F7;border:1px solid #D1D4D9;border-radius:16px;padding:0;margin-top:24px;overflow:hidden">
+              <img src="images/cityfix-features-screens.png" alt="City Fix Key Features Multi-Screen Overview" style="width:100%;height:auto;border-radius:16px;display:block">
+            </div>
+          </div>
+          <hr class="divider" style="margin-bottom:26px">
+          <div class="cs-section">
+            <div class="sec-num">Section 03 — User Research &amp; Competitor Analysis</div>
+            <p class="cs-body" style="margin-bottom:16px">Conducted a comprehensive competitive analysis to evaluate industry benchmarks — mapping user journeys, application cost structures, authentication onboarding friction, primary task velocity, ease of use across diverse age groups, and support accessibility standards.</p>
+            <div class="ux-matrix">
+              <div style="font-size:15px;font-weight:600;color:#111827;margin-bottom:16px;letter-spacing:0">Main issues found in competitor apps:</div>
+              <div class="ux-matrix-grid">
+                <div class="ux-matrix-card">
+                  <div class="ux-matrix-title">Complex Registration</div>
+                  <div class="ux-matrix-desc">Too many steps and mandatory phone verification before users can even see the main screens.</div>
+                </div>
+                <div class="ux-matrix-card">
+                  <div class="ux-matrix-title">Confusing Home Screen</div>
+                  <div class="ux-matrix-desc">Too many buttons and irrelevant services make it hard to find basic actions.</div>
+                </div>
+                <div class="ux-matrix-card">
+                  <div class="ux-matrix-title">Too Many Steps to Report</div>
+                  <div class="ux-matrix-desc">Sending a simple issue ticket takes more than 5 separate screens.</div>
+                </div>
+                <div class="ux-matrix-card">
+                  <div class="ux-matrix-title">Hard to Read &amp; Click</div>
+                  <div class="ux-matrix-desc">Small text size, low color contrast, and tiny buttons that are hard to tap on mobile.</div>
+                </div>
+                <div class="ux-matrix-card">
+                  <div class="ux-matrix-title">No Status Updates</div>
+                  <div class="ux-matrix-desc">People have no idea what happens to their request after submitting it.</div>
+                </div>
+                <div class="ux-matrix-card">
+                  <div class="ux-matrix-title">No Direct Support</div>
+                  <div class="ux-matrix-desc">No in-app chat or clear way to ask administrators for help.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="divider" style="margin-bottom:26px">
+          <div class="cs-section">
+            <div class="sec-num">Section 04 — From Sketches to Components</div>
+            <p class="cs-body" style="margin-bottom:16px">We started with quick low-fidelity sketches and wireframes to test layout patterns and button placements. Once the structure was clear, we built a modular design system in Figma with accessible colors, custom icons, and flexible UI components.</p>
+            <div style="border:1px solid #E5E7EB;border-radius:16px;overflow:hidden;background:#F2F4F7;width:100%;margin-top:24px">
+              <img src="images/cityfix-sketches.png" alt="City Fix Low-Fidelity Sketches and UI Components" style="width:100%;display:block">
+            </div>
+          </div>
+          <hr class="divider" style="margin-bottom:26px">
+          <div class="cs-section">
+            <div class="sec-num">Section 05 — Outcomes &amp; Impact</div>
+            <div class="impact-accent" style="border:1px solid #E5E7EB;border-radius:16px;padding:32px;margin-bottom:32px">
+              <div class="cs-h2" style="margin-bottom:10px">Impact</div>
+              <div>
+                <div class="impact-item"><span class="material-symbols-outlined">trending_up</span><span class="cs-body">Simplified ticket submission: Reduced the reporting flow to 3 clear steps with photo uploads and automatic GPS location.</span></div>
+                <div class="impact-item"><span class="material-symbols-outlined">trending_up</span><span class="cs-body">Frictionless onboarding: Users can now explore city services right away without being blocked by mandatory phone verification.</span></div>
+                <div class="impact-item"><span class="material-symbols-outlined">trending_up</span><span class="cs-body">Clear status tracking: Added real-time tracking and push notifications so citizens always know when their issue is being fixed.</span></div>
+                <div class="impact-item"><span class="material-symbols-outlined">trending_up</span><span class="cs-body">Accessible design system: Built a cohesive Figma component library focused on high readability, strong color contrast, and clear touch targets.</span></div>
+              </div>
+            </div>
+            <div style="border:1px solid #E5E7EB;border-radius:16px;overflow:hidden;background:#F2F4F7;width:100%">
+              <img src="images/cityfix-final-screens.png" alt="City Fix Final Showcase" style="width:100%;display:block">
+            </div>
+          </div>
+
+          <div class="explore-projects">
+            <h2 class="explore-title">Explore Other Projects</h2>
+            <div class="explore-grid">
+              <div class="explore-card" onclick="openCase(0)">
+                <div class="explore-meta">
+                  <span class="cat-tag">Product Design</span>
+                  <div class="explore-name">PandaSign Feature</div>
+                </div>
+                <div class="explore-thumb" style="background:#F4F7FF">
+                  <img src="images/pandasign-thumb.png" alt="PandaSign Feature Cover">
+                  <div class="explore-overlay"></div>
+                  <div class="explore-view">View <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                </div>
+              </div>
+              <div class="explore-card" onclick="openCase(1)">
+                <div class="explore-meta">
+                  <span class="cat-tag">Product (UX) Design</span>
+                  <div class="explore-name">B2B SaaS WebTrader Platform 2.0</div>
+                </div>
+                <div class="explore-thumb" style="background:#F0F4FF">
+                  <img src="images/webtrader-thumb.png" alt="WebTrader Platform 2.0 Cover">
+                  <div class="explore-overlay"></div>
+                  <div class="explore-view">View <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /case-2 -->
+
+      </div><!-- /case-study-view -->
+    </div><!-- /tab-projects -->
+
+
+    <!-- ===== BIO TAB ===== -->
+    <div id="tab-bio" class="tab-content" style="padding:32px 48px 48px">
+      <div style="max-width:680px;margin:0 auto;width:100%">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">
+          <div style="width:64px;height:64px;border-radius:50%;border:1px solid #D1D5DB;background:#F7F8FA;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden">
+            <img src="images/alena-avatar.png" alt="Alena Kubrakova" style="width:100%;height:100%;object-fit:cover;display:block">
+          </div>
+          <div>
+            <div style="font-size:16px;font-weight:700;color:#111;letter-spacing:0">Alena Kubrakova</div>
+            <div style="font-size:12px;font-weight:400;color:#64748B;margin-top:2px;letter-spacing:0">Product Designer · Haifa, Israel</div>
+          </div>
+        </div>
+        <p style="font-size:13px;color:#5A6578;line-height:1.85;margin-bottom:18px;letter-spacing:0">Hi, I'm Alena. I'm a Product Designer (UX/UI) with 4+ years of experience building complex B2B SaaS and FinTech platforms, and 8+ years in digital design. Focused on complex workflows, multi-brand Design Systems, and cross-platform UX (Web, CRM, Mobile) with a strong ability to translate backend logic into clean, usable interfaces.</p>
+        <hr class="divider" style="margin-bottom:18px">
+        <div style="margin-bottom:18px">
+          <div class="sec-heading">Beyond Design</div>
+          <p style="font-size:13px;color:#5A6578;line-height:2.1;letter-spacing:0">
+            🏃‍♀️ <strong style="color:#374151;font-weight:600">Active &amp; People-Oriented:</strong> I bring high energy and a friendly, collaborative mindset to every team. I moved from Ukraine to Israel in 2017, embracing new challenges with resilience.<br>
+            <strong style="color:#374151;font-weight:500">Fun fact:</strong> In the past, I was a snowboard instructor — a rewarding experience that perfected my ability to guide others and keep a cool head under pressure.<br>
+            Proud dog owner of a Labrador named Emmy 🦮
+          </p>
+        </div>
+        <hr class="divider" style="margin-bottom:18px">
+        <div style="margin-bottom:18px">
+          <div class="sec-heading">Work Experience</div>
+          <div style="display:flex;flex-direction:column">
+            <div style="display:flex;gap:12px;padding-bottom:20px">
+              <div style="display:flex;flex-direction:column;align-items:center;padding-top:1px"><div class="tl-dot now"></div><div class="tl-line"></div></div>
+              <div>
+                <div style="font-size:11px;color:#64748B;margin-bottom:2px">Jul 2022 – Present</div>
+                <div style="font-size:13px;font-weight:600;color:#111;letter-spacing:0">Product Designer UX/UI</div>
+                <div style="font-size:12px;color:#64748B;margin-bottom:7px">Panda Trading System · Haifa, Israel</div>
+                <div style="display:flex;flex-direction:column;gap:4px">
+                  <div class="bullet-item"><div class="bullet-dot"></div><span style="font-size:12px;color:#5A6578;line-height:1.7;letter-spacing:0"><strong style="color:#374151;font-weight:600">Design System:</strong> Built and scaled a multi-brand Design System (tokens, dynamic variables, component libraries) to speed up development and keep UI consistent across Web and Mobile.</span></div>
+                  <div class="bullet-item"><div class="bullet-dot"></div><span style="font-size:12px;color:#5A6578;line-height:1.7;letter-spacing:0"><strong style="color:#374151;font-weight:600">Key Features:</strong> End-to-end design of core platform features including PandaSign (eSignature engine), Prop Trading modules, Help Desk, and Push Notification workflows.</span></div>
+                  <div class="bullet-item"><div class="bullet-dot"></div><span style="font-size:12px;color:#5A6578;line-height:1.7;letter-spacing:0"><strong style="color:#374151;font-weight:600">B2B / SaaS Redesign:</strong> Redesigned WebTrader and Server Console, making complex financial data easier to read and simplifying daily navigation for traders and admins.</span></div>
+                  <div class="bullet-item"><div class="bullet-dot"></div><span style="font-size:12px;color:#5A6578;line-height:1.7;letter-spacing:0"><strong style="color:#374151;font-weight:600">Team Collaboration:</strong> Worked closely with PMs, Front-End Developers, and QA to refine UI specs, edge cases, and test designs before releases.</span></div>
+                  <div class="bullet-item"><div class="bullet-dot"></div><span style="font-size:12px;color:#5A6578;line-height:1.7;letter-spacing:0"><strong style="color:#374151;font-weight:600">Company Websites:</strong> Redesigned marketing and product websites to improve structure, visual hierarchy, and user conversion.</span></div>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;gap:12px;padding-bottom:20px">
+              <div style="display:flex;flex-direction:column;align-items:center;padding-top:1px"><div class="tl-dot"></div><div class="tl-line"></div></div>
+              <div>
+                <div style="font-size:11px;color:#64748B;margin-bottom:2px">Mar 2018 – Jul 2022</div>
+                <div style="font-size:13px;font-weight:600;color:#111;letter-spacing:0">UX/UI Web Designer</div>
+                <div style="font-size:12px;color:#64748B;margin-bottom:7px">Freelance · Israel</div>
+                <div style="display:flex;flex-direction:column;gap:4px">
+                  <div class="bullet-item"><div class="bullet-dot"></div><span style="font-size:12px;color:#5A6578;line-height:1.7;letter-spacing:0">Designed custom mobile apps, responsive websites, and visual identities for local SMB clients.</span></div>
+                  <div class="bullet-item"><div class="bullet-dot"></div><span style="font-size:12px;color:#5A6578;line-height:1.7;letter-spacing:0">Handled the full process: user research, wireframes, UI kits, interactive prototypes, and developer handoff.</span></div>
+                  <div class="bullet-item"><div class="bullet-dot"></div><span style="font-size:12px;color:#5A6578;line-height:1.7;letter-spacing:0">Led client meetings, design reviews, and project delivery.</span></div>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex;gap:12px;padding-bottom:20px">
+              <div style="display:flex;flex-direction:column;align-items:center;padding-top:1px"><div class="tl-dot"></div><div class="tl-line"></div></div>
+              <div>
+                <div style="font-size:11px;color:#64748B;margin-bottom:2px">2011 – 2016</div>
+                <div style="font-size:13px;font-weight:600;color:#111;letter-spacing:0">Graphic &amp; Marketing Designer</div>
+                <div style="font-size:12px;color:#64748B;margin-bottom:7px">Earlier Experience: Extremstyle &amp; Vikter Plus · Kyiv, Ukraine</div>
+                <div style="display:flex;flex-direction:column;gap:4px">
+                  <div class="bullet-item"><div class="bullet-dot"></div><span style="font-size:12px;color:#5A6578;line-height:1.7;letter-spacing:0">Led marketing design, retail visual communications, print production, and brand identity projects.</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="divider" style="margin-bottom:18px">
+        <div style="margin-bottom:20px">
+          <div class="sec-heading">Education &amp; Learning</div>
+          <div style="display:flex;flex-direction:column;gap:13px">
+            <div>
+              <div style="font-size:13px;font-weight:600;color:#111;letter-spacing:0">M.A. in Graphic Design</div>
+              <div style="font-size:12px;color:#64748B;margin-top:2px">Kyiv National University of Technologies and Design, Ukraine</div>
+              <div style="font-size:11px;color:#64748B;margin-top:1px">2005 – 2010</div>
+            </div>
+            <div>
+              <div style="font-size:13px;font-weight:600;color:#111;letter-spacing:0">UX/UI Mobile Application — Advanced Online Course</div>
+              <div style="font-size:12px;color:#64748B;margin-top:2px">StudyKvo</div>
+              <div style="font-size:11px;color:#64748B;margin-top:1px">2022</div>
+            </div>
+            <div>
+              <div style="font-size:13px;font-weight:600;color:#111;letter-spacing:0">Graphic Design and UX/UI</div>
+              <div style="font-size:12px;color:#64748B;margin-top:2px">John Bryce College, Haifa, Israel</div>
+              <div style="font-size:11px;color:#64748B;margin-top:1px">2020 – 2021</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-bottom:32px">
+          <a href="Alena_Kubrakova_Product_Designer_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-dl">
+            <span class="material-symbols-outlined" style="font-size:15px">download</span>Download CV
+          </a>
+        </div>
+      </div>
+    </div><!-- /bio -->
+
+    <!-- ===== CONTACT TAB ===== -->
+    <div id="tab-contact" class="tab-content" style="padding:32px 48px 48px">
+      <div style="max-width:680px;margin:0 auto;width:100%">
+        <div style="margin-bottom:32px">
+          <div style="font-size:32px;font-weight:700;color:#111;line-height:40px;letter-spacing:0">Contact</div>
+          <div style="font-size:12px;color:#64748B;margin-top:6px;line-height:1.6">Have a project in mind or just want to say hi? Reach out via email, LinkedIn, or WhatsApp.</div>
+        </div>
+
+        <!-- Email card -->
+        <a href="mailto:o.kubrakova@gmail.com" class="contact-card" style="display:flex;align-items:center;gap:18px;padding:24px 28px;border:1px solid #D1D5DB;border-radius:14px;background:#fff;text-decoration:none;transition:border-color .2s ease,box-shadow .2s,background .15s;margin-bottom:14px"
+           onmouseover="this.style.boxShadow='0 4px 20px rgba(0,0,0,.07)';this.style.background='#FAFBFF'"
+           onmouseout="this.style.boxShadow='none';this.style.background='#fff'">
+          <div style="width:44px;height:44px;border-radius:10px;background:#EFF6FF;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <span class="material-symbols-outlined" style="font-size:20px;color:#3B82F6">mail</span>
+          </div>
+          <div>
+            <div style="font-size:11px;font-weight:400;color:#64748B;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px">Email</div>
+            <div style="font-size:14px;font-weight:500;color:#111;letter-spacing:0">o.kubrakova@gmail.com</div>
+          </div>
+          <span class="material-symbols-outlined arrow-icon" style="font-size:16px;color:#D1D5DB;margin-left:auto">arrow_forward</span>
+        </a>
+
+        <!-- LinkedIn card -->
+        <a href="https://www.linkedin.com/in/alenakubrakova/" target="_blank" class="contact-card" style="display:flex;align-items:center;gap:18px;padding:24px 28px;border:1px solid #D1D5DB;border-radius:14px;background:#fff;text-decoration:none;transition:border-color .2s ease,box-shadow .2s,background .15s;margin-bottom:14px"
+           onmouseover="this.style.boxShadow='0 4px 20px rgba(0,0,0,.07)';this.style.background='#FAFBFF'"
+           onmouseout="this.style.boxShadow='none';this.style.background='#fff'">
+          <div style="width:44px;height:44px;border-radius:10px;background:#EFF6FF;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <div style="font-size:11px;font-weight:400;color:#64748B;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px">LinkedIn</div>
+            <div style="font-size:14px;font-weight:500;color:#111;letter-spacing:0">Alena Kubrakova</div>
+          </div>
+          <span class="material-symbols-outlined arrow-icon" style="font-size:16px;color:#D1D5DB;margin-left:auto">arrow_forward</span>
+        </a>
+
+        <!-- WhatsApp card -->
+        <a href="https://wa.me/972543314811" target="_blank" rel="noopener noreferrer" class="contact-card" style="display:flex;align-items:center;gap:18px;padding:24px 28px;border:1px solid #D1D5DB;border-radius:14px;background:#fff;text-decoration:none;transition:border-color .2s ease,box-shadow .2s,background .15s"
+           onmouseover="this.style.boxShadow='0 4px 20px rgba(0,0,0,.07)';this.style.background='#FAFBFF'"
+           onmouseout="this.style.boxShadow='none';this.style.background='#fff'">
+          <div style="width:44px;height:44px;border-radius:10px;background:#EFF6FF;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div style="font-size:11px;font-weight:400;color:#64748B;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px">Phone / WhatsApp</div>
+            <div style="font-size:14px;font-weight:500;color:#111;letter-spacing:0">+972 54 331 4811</div>
+          </div>
+          <span class="material-symbols-outlined arrow-icon" style="font-size:16px;color:#D1D5DB;margin-left:auto">arrow_forward</span>
+        </a>
+      </div>
+    </div><!-- /contact -->
+
+  </main>
+</div>
+
+<script>
+const TABS=['projects','bio','contact'];
+function switchTab(t){
+  TABS.forEach(id=>{
+    document.getElementById('tab-'+id).classList.remove('active');
+    document.getElementById('nav-'+id).classList.remove('active');
+  });
+  document.getElementById('tab-'+t).classList.add('active');
+  document.getElementById('nav-'+t).classList.add('active');
+  if(t==='projects') closeCase();
+  document.querySelector('main').scrollTop=0;
+}
+function openCase(i){
+  document.getElementById('projects-grid').style.display='none';
+  document.getElementById('case-study-view').style.display='block';
+  document.querySelectorAll('.case-study').forEach(c=>c.classList.remove('active'));
+  document.getElementById('case-'+i).classList.add('active');
+  document.querySelector('main').scrollTop=0;
+}
+function closeCase(){
+  document.getElementById('projects-grid').style.display='';
+  document.getElementById('case-study-view').style.display='none';
+  document.querySelectorAll('.case-study').forEach(c=>c.classList.remove('active'));
+}
+function openLightbox(src, alt) {
+  const modal = document.getElementById('lightbox-modal');
+  const img = document.getElementById('lightbox-img');
+  img.src = src;
+  img.alt = alt;
+  modal.classList.remove('hidden');
+  setTimeout(() => modal.classList.add('opacity-100'), 10);
+}
+function closeLightbox() {
+  const modal = document.getElementById('lightbox-modal');
+  modal.classList.remove('opacity-100');
+  setTimeout(() => modal.classList.add('hidden'), 300);
+}
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
+</script>
+<div id="lightbox-modal" class="fixed inset-0 z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4" style="background: rgba(0, 0, 0, 0.65); backdrop-filter: blur(8px);" onclick="closeLightbox()">
+  <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white hover:text-gray-300 p-2 focus:outline-none z-50 bg-black/20 rounded-full flex items-center justify-center transition-transform hover:scale-105">
+    <span class="material-symbols-outlined" style="font-size: 24px;">close</span>
+  </button>
+  <img id="lightbox-img" src="" alt="" class="max-w-[94vw] max-h-[94vh] object-contain rounded-lg shadow-2xl block" onclick="event.stopPropagation();">
+</div>
+</body>
+</html>
